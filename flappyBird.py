@@ -25,6 +25,14 @@ class Area():
         return self.rect.collidepoint(x, y)
     def collidepoint(self, rect):
         return self.rect.collidepoint(rect)
+#3
+class Label(Area):
+    def set_text(self, text, fsize=12, text_color=(0, 0, 0)):
+        self.image = pygame.font.SysFont('Arial', fsize).render(text, True, text_color)
+    def draw(self, shift_x=0, shift_y=0):
+        self.fill()
+        mw.blit(self.image, (self.rect.x + shift_x, self.rect.y + shift_y))
+
 #5
 bird = Picture("bird.png", 160, 200 , 60 , 40)
 columnMove = 400
