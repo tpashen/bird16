@@ -40,6 +40,15 @@ for i in range (4):
     column_list.append(column)
     column_list.append(columnl)
 
+#это 7
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            game = False
+        if event.type = pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                move_up = True
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_SPACE
+                move_up = False
 
-     
-     
+
