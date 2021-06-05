@@ -11,6 +11,7 @@ mw.fill(back)
 clock = pygame.time.Clock()
  
 game = True
+#часть2
 class Area():
     def __init__(self, x=0, y=0, widht=10, height=10, color=None):
         self.rect = pygame.Rect(x, y, widht, height)
