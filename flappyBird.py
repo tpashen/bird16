@@ -78,5 +78,13 @@ while game:
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE
                 move_up = False
-
-
+#это 8
+    if move_up:
+        bird.rect.y -= 10
+    for i in column_list:
+        if i.rect.colliderect(bird.rect):
+            game = False
+    if bird.rect.y > 500 or bird.rect.y < 0:
+        game= False
+    pygame.display.update()
+    clock.tick(40)
