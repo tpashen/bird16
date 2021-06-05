@@ -78,11 +78,11 @@ while game:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game = False
-        if event.type = pygame.KEYDOWN:
+        if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 move_up = True
         elif event.type == pygame.KEYUP:
-            if event.key == pygame.K_SPACE
+            if event.key == pygame.K_SPACE:
                 move_up = False
 #это 8
     if move_up:
